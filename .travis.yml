@@ -8,10 +8,10 @@ cache:
     - node_modules
 env:
   global:
-  - CF_API=https://api.ng.bluemix.net/
-  - CF_USERNAME=ryan@258webco.com
-  - CF_ORG=ryan@258webco.com
-  - CF_SPACE=dev
+    - CF_API=https://api.ng.bluemix.net/
+    - CF_USERNAME=ryan@258webco.com
+    - CF_ORG=ryan@258webco.com
+    - CF_SPACE=dev
 before_deploy:
   - wget https://s3.amazonaws.com/go-cli/releases/v6.12.4/cf-cli_amd64.deb -qO temp.deb && sudo dpkg -i temp.deb
   - rm temp.deb
